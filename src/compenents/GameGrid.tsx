@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import apiClient from "../services/api-client";
 import { CanceledError } from "axios";
 import useGames from "../hooks/useGames";
+import { SimpleGrid } from "@chakra-ui/react";
+import GameCard from "./GameCard";
 
 const GameGrid = () => {
   const { games, error } = useGames();
@@ -11,11 +13,15 @@ const GameGrid = () => {
 
   return (
     <>
-      <ul>
+      <SimpleGrid
+        columns={{ sm: 1, md: 2, lg: 3, xl: 3 }}
+        padding="10px"
+        spacing="10px"
+      >
         {games.map((game) => {
-          return <li key={game.id}>{game.name}</li>;
+          return <GameCard game={game} />;
         })}
-      </ul>
+      </SimpleGrid>
     </>
   );
 };
