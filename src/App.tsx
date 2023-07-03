@@ -5,6 +5,7 @@ import { Button, ButtonGroup } from "@chakra-ui/react";
 import "./App.css";
 import { Grid, GridItem, Show } from "@chakra-ui/react";
 import NavBar from "./compenents/NavBar";
+import GameGrid from "./compenents/GameGrid";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -27,7 +28,7 @@ function App() {
           </GridItem>
         </Show>
         <GridItem area="main" padding="20px">
-          Main
+          <GameGrid />
         </GridItem>
       </Grid>
     </>
