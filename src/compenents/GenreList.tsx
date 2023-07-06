@@ -20,13 +20,13 @@ const GenereList = ({ onSelect, selectedGenre }: Props) => {
   if (error) return null;
   if (isLoading) return <Spinner margin={"50px"} size={"xl"} />;
   return data.map((genre) => (
-    <List>
-      <ListItem key={genre.id}>
+    <List key={genre.id}>
+      <ListItem>
         <HStack>
           <Image
             paddingY={"10px"}
             src={getCroppedImageUrl(genre.image_background)}
-            boxSize={"80px"}
+            boxSize={"60px"}
           />
           <Button
             fontWeight={selectedGenre?.id === genre.id ? "bold" : "normal"}
