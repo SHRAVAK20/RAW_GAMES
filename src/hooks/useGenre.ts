@@ -1,4 +1,4 @@
-import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import apiClient, { FetchResponse } from "../services/api-client";
 
 export interface Genre {
