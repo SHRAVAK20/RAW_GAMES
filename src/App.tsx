@@ -42,15 +42,7 @@ function App() {
           <Box paddingLeft={10}>
             <GameHeading />
             <HStack spacing={5}>
-              <PlatformSelected
-                selectedPlatformId={gameQuery.platformId}
-                onSelect={(platform) =>
-                  setGameQuery({
-                    ...gameQuery,
-                    platformId: platform?.id || null,
-                  })
-                }
-              />
+              <PlatformSelected />
               <SortSelector
                 selectedOrder={gameQuery.sortOrder}
                 onSelect={(sortOrder) =>
