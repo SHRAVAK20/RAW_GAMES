@@ -40,7 +40,7 @@ function App() {
         </Show>
         <GridItem area="main" padding="20px">
           <Box paddingLeft={10}>
-            <GameHeading gameQuery={gameQuery} />
+            <GameHeading />
             <HStack spacing={5}>
               <PlatformSelected
                 selectedPlatformId={gameQuery.platformId}
