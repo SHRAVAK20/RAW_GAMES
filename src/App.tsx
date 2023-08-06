@@ -35,12 +35,7 @@ function App() {
 
         <Show above="lg">
           <GridItem area="aside" padding="20px" marginX={"5px"}>
-            <GenereList
-              selectedGenreId={gameQuery.genreId}
-              onSelect={(genre) =>
-                setGameQuery({ ...gameQuery, genreId: genre.id })
-              }
-            />
+            <GenereList />
           </GridItem>
         </Show>
         <GridItem area="main" padding="20px">
