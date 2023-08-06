@@ -46,7 +46,7 @@ function App() {
               <SortSelector />
             </HStack>
           </Box>
-          <GameGrid gameQuery={gameQuery} />
+          <GameGrid />
         </GridItem>
       </Grid>
     </>
