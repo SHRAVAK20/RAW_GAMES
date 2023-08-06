@@ -14,7 +14,7 @@ const GameGrid = () => {
     hasNextPage,
     fetchNextPage,
     // isFetchingNextPage,
-  } = useGames({});
+  } = useGames();
   if (error) {
     return <div>{error.message}</div>;
   }
