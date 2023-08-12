@@ -7,7 +7,17 @@ interface Props {
 }
 
 const GameCardConatiner = ({ children }: Props) => {
-  return <Box className={styles.card}>{children}</Box>;
+  return (
+    <Box
+      _hover={{
+        transform: "scale(1.03)",
+        transition: "transform .15s ease.in",
+      }}
+      className={styles.card}
+    >
+      {children}
+    </Box>
+  );
 };
 
 export default GameCardConatiner;
