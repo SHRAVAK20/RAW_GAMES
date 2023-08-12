@@ -23,6 +23,7 @@
     "react-icon": "^1.0.0",
     "react-icons": "^4.10.1",
     "react-infinite-scroll-component": "^6.1.0",
+    "react-router-dom": "^6.10.0",
     "sass": "^1.63.6",
     "scss": "^0.2.4",
     "simple-zustand-devtools": "^1.1.0",
