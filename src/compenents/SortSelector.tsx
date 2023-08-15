@@ -20,7 +20,8 @@ const SortSelector = () => {
   return (
     <Menu>
       <MenuButton as={Button} rightIcon={<BsChevronDown />}>
-        {`SortBy: ${currentOrderLabel?.label}`}
+        SortBy : {currentOrderLabel?.label || "Relevance"}
+        {/* {`SortBy: ${currentOrderLabel?.label }`} */}
       </MenuButton>
       <MenuList>
         {SortOrder.map((order) => (
